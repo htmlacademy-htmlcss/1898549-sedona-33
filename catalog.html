@@ -39,7 +39,7 @@
     </nav>
   </header>
   <main class="main-inner">
-    <form>
+    <form class="catalog">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <img class="homelink" src="" alt="Картинка кнопки домой">
       <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -48,17 +48,17 @@
       <ul class="catalog-filter-list">
         <li class="catalog-filter-item">
           <label class="control">
-            <input class="control-input" type="checkbox" name="swimmingpool" checked>Бассейн
+            <input class="control-checkbox" type="checkbox" name="swimmingpool" checked>Бассейн
           </label>
         </li>
         <li class="catalog-filter-item">
           <label class="control">
-            <input class="control-input" type="checkbox" name="parking" checked>Парковка
+            <input class="control-checkbox" type="checkbox" name="parking" checked>Парковка
           </label>
         </li>
         <li class="catalog-filter-item">
           <label class="control">
-            <input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
+            <input class="control-checkbox" type="checkbox" name="Wi-Fi">Wi-Fi
           </label>
         </li>
       </ul>
@@ -66,17 +66,17 @@
       <ul class="catalog-filter-list">
         <li class="catalog-filter-item">
           <label class="control">
-            <input class="control-input" type="radio" name="housing-types" value="hotel" checked>Гостиница
+            <input class="control-radio" type="radio" name="housing-types" value="hotel" checked>Гостиница
           </label>
         </li>
         <li class="catalog-filter-item">
           <label class="control">
-            <input class="control-input" type="radio" name="housing-types" value="motel">Мотель
+            <input class="control-radio" type="radio" name="housing-types" value="motel">Мотель
           </label>
         </li>
         <li class="catalog-filter-item">
           <label class="control">
-            <input class="control-input" type="radio" name="housing-types" value="apartments">Апартаменты
+            <input class="control-radio" type="radio" name="housing-types" value="apartments">Апартаменты
           </label>
         </li>
       </ul>
@@ -88,12 +88,12 @@
           <input type="range" id="price" name="price" min="1" max="9000" step="1">
         </div>
         <div class="buttons">
-          <button type="submit" value="Применить">Применить</button>
-          <button type="reset" value="Сбросить">Сбросить</button>
+          <button type="submit">Применить</button>
+          <button type="reset">Сбросить</button>
         </div>
       </div>
     </form>
-    <section>
+    <section class="hotel-cards">
       <h2>Найдено гостиниц: 38</h2>
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешевые</option>
@@ -110,106 +110,70 @@
       <ul class="hotel-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="" alt="">
+            <img class="hotel-card-image" src="" alt="Картинка Гостиницы Amara Resort & Spa">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           </a>
           <p class="hotel">Гостиница</p>
-          <p class="product-card-price">4000 ₽</p>
+          <p class="hotel">4000 ₽</p>
           <div class="buttons">
-            <button class="button-more" type="button">Подробнее</button>
-            <button class="button-favorite" type="button">В Избранное</button>
-            <div class="rating-area">
-              <input type="radio" id="star-5" name="rating" value="5">
-              <label for="star-5" title="Оценка «5»"></label>
-              <input type="radio" id="star-4" name="rating" value="4">
-              <label for="star-4" title="Оценка «4»"></label>
-              <input type="radio" id="star-3" name="rating" value="3">
-              <label for="star-3" title="Оценка «3»"></label>
-              <input type="radio" id="star-2" name="rating" value="2">
-              <label for="star-2" title="Оценка «2»"></label>
-              <input type="radio" id="star-1" name="rating" value="1">
-              <label for="star-1" title="Оценка «1»"></label>
-            </div>
-            <p class="rating">рейтинг:9.2</p>
+            <a class="hotel-button hotel-more" href="#">Подробнее</a>
+            <a class="hotel-button hotel-favorite" href="#">В Избранное</a>
           </div>
+          <div class="rating-area">
+
+          </div>
+          <p class="rating">рейтинг:9.2</p>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="" alt="">
+            <img class="hotel-card-image" src="" alt="Картинка Гостиницы Desert Quail Inn">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
           <p class="hotel">Гостиница</p>
-          <p class="product-card-price">3000 ₽</p>
+          <p class="hotel">3000 ₽</p>
           <div class="buttons">
-            <button class="button-more" type="button">Подробнее</button>
-            <button class="button-favorite" type="button">В Избранное</button>
-            <div class="rating-area">
-              <input type="radio" id="star-5" name="rating" value="5">
-              <label for="star-5" title="Оценка «5»"></label>
-              <input type="radio" id="star-4" name="rating" value="4">
-              <label for="star-4" title="Оценка «4»"></label>
-              <input type="radio" id="star-3" name="rating" value="3">
-              <label for="star-3" title="Оценка «3»"></label>
-              <input type="radio" id="star-2" name="rating" value="2">
-              <label for="star-2" title="Оценка «2»"></label>
-              <input type="radio" id="star-1" name="rating" value="1">
-              <label for="star-1" title="Оценка «1»"></label>
-            </div>
-            <p class="rating">рейтинг:8.9</p>
+            <a class="hotel-button hotel-more" href="#">Подробнее</a>
+            <a class="hotel-button hotel-favorite" href="#">В Избранное</a>
           </div>
+          <div class="rating-area">
+
+          </div>
+          <p class="rating">рейтинг:8.9</p>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="" alt="">
+            <img class="hotel-card-image" src="" alt="Картинка Гостиницы Villas at Poco Diablo">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
           <p class="hotel">Гостиница</p>
-          <p class="product-card-price">2000 ₽</p>
+          <p class="hotel">2000 ₽</p>
           <div class="buttons">
-            <button class="button-more" type="button">Подробнее</button>
-            <button class="button-in-favorites button-favorite" type="button">В Избранном</button>
-            <div class="rating-area">
-              <input type="radio" id="star-5" name="rating" value="5">
-              <label for="star-5" title="Оценка «5»"></label>
-              <input type="radio" id="star-4" name="rating" value="4">
-              <label for="star-4" title="Оценка «4»"></label>
-              <input type="radio" id="star-3" name="rating" value="3">
-              <label for="star-3" title="Оценка «3»"></label>
-              <input type="radio" id="star-2" name="rating" value="2">
-              <label for="star-2" title="Оценка «2»"></label>
-              <input type="radio" id="star-1" name="rating" value="1">
-              <label for="star-1" title="Оценка «1»"></label>
-            </div>
-            <p class="rating">рейтинг:9.2</p>
+            <a class="hotel-button hotel-more" href="#">Подробнее</a>
+            <a class="hotel-button hotel-favorite" href="#">В Избранном</a>
           </div>
+          <div class="rating-area">
+
+          </div>
+          <p class="rating">рейтинг:9.2</p>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="" alt="">
+            <img class="hotel-card-image" src="" alt="Картинка GreenTree Inn">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
           <p class="hotel">Гостиница</p>
-          <p class="product-card-price">3000 ₽</p>
+          <p class="hotel">3000 ₽</p>
           <div class="buttons">
-            <button class="button-more" type="button">Подробнее</button>
-            <button class="button-favorite" type="button">В Избранное</button>
-            <div class="rating-area">
-              <input type="radio" id="star-5" name="rating" value="5">
-              <label for="star-5" title="Оценка «5»"></label>
-              <input type="radio" id="star-4" name="rating" value="4">
-              <label for="star-4" title="Оценка «4»"></label>
-              <input type="radio" id="star-3" name="rating" value="3">
-              <label for="star-3" title="Оценка «3»"></label>
-              <input type="radio" id="star-2" name="rating" value="2">
-              <label for="star-2" title="Оценка «2»"></label>
-              <input type="radio" id="star-1" name="rating" value="1">
-              <label for="star-1" title="Оценка «1»"></label>
-            </div>
-            <p class="rating">рейтинг:9.2</p>
+            <a class="hotel-button hotel-more" href="#">Подробнее</a>
+            <a class="hotel-button hotel-favorite" href="#">В Избранное</a>
           </div>
+          <div class="rating-area">
+
+          </div>
+          <p class="rating">рейтинг:9.2</p>
         </li>
       </ul>
-      <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+      <button class="button pagination-show-more">Загрузить ещё</button>
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -239,7 +203,7 @@
       </select>
     </section>
     <section class="subscribe-block">
-      <h2 class="subscribe-title title">Подпишитесь на рассылку</h2>
+      <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
       <p class="paragraph subscribe-paragraph">Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <form class="subscribe-form" action="" method="get">
